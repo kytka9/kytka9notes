@@ -1,4 +1,72 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: #2b3e22;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+h2 {
+    color: #6a9955;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+    letter-spacing: 1px;
+}
+
+section {
+    width: 100%;
+    max-width: 800px;
+}
+
+div {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+p {
+    margin: 3px 0;
+    border-left: 3px solid transparent;
+    padding-left: 5px;
+    transition: 0.2s;
+}
+
+p:hover {
+    border-left: 3px solid #6a9955;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+span {
+    color: #6a9955;
+    font-style: italic;
+    margin-left: 5px;
+}
+
+.var {
+    color: #ce9178; /* Pekná oranžovo-hnedá (ako reťazce vo VS Code) */
+    font-weight: bold;
+}
+
+
+
+
+.home-link i {
+    transition: transform 0.4s ease-in-out;
+    color: #ffffff;
+}
+
+.home-link:hover i {
+    transform: perspective(500px) rotateY(-45deg); /* Dvere sa vyklopia do priestoru */
+   
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
 }
