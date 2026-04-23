@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>kytka9notes</title>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <h2>kytka9notes</h2>
+        <a href="https://github.com/kytka9/kytka9notes" target="_blank" class="github-link">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+        </a>
+    </header>
+
+    <div class="filter-container">
+        <button class="filter-btn active" data-cat="all">Všetko</button>
+        <button class="filter-btn" data-cat="git">Git</button>
+        <button class="filter-btn" data-cat="linux">Linux</button>
+        <button class="filter-btn" data-cat="javascript">JS</button>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Hľadaj príkaz alebo funkciu...">
+    </div>
+
+    <section id="terminal-output"></section>
+
+    <!-- IMPORT POZNÁMOK -->
+    <script src="./data/javascript.js"></script>
+    <script src="./data/git.js"></script>
+    
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
