@@ -4,12 +4,15 @@ const notesData = [
 ];
 
 // Celkový počet poznámok
-document.getElementById('note-count').innerText = `Celkovo ${notesData.length} príkazov`;
+document.getElementById('note-count').innerText = `Celkovo ${notesData.length} príkazov, skratiek a funkcií :)`;
 // Aktuálny čas
 setInterval(() => {
     document.getElementById('live-clock').innerText = new Date().toLocaleTimeString();
 }, 1000);
-
+// Vyhľadávanie bez diakritiky
+const removeDiacritics = (str) => {
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+};
 
 const container = document.getElementById('terminal-output');
 const searchInput = document.getElementById('searchInput');
@@ -28,16 +31,32 @@ function renderNotes(data) {
     });
 }
 
-// Funkcia, ktorá filtruje podľa kategórie AJ podľa textu
 function updateDisplay() {
-    const term = searchInput.value.toLowerCase();
+    // 1. Očistíme hľadaný výraz od diakritiky a dáme na malé písmená
+    const term = removeDiacritics(searchInput.value.toLowerCase());
+
     const filtered = notesData.filter(item => {
         const categoryMatch = currentCategory === 'all' || item.category === currentCategory;
-        const textMatch = item.command.toLowerCase().includes(term) ||
-            item.comment.toLowerCase().includes(term) ||
-            item.vars.some(v => v.toLowerCase().includes(term));
+
+        // 2. Pripravíme si texty z dát (tiež bez diakritiky)
+        const cmd = removeDiacritics(item.command.toLowerCase());
+        const comm = removeDiacritics(item.comment.toLowerCase());
+        const tags = item.tags ? removeDiacritics(item.tags.toLowerCase()) : "";
+
+        // Skontrolujeme aj premenné vo vars
+        const varsMatch = item.vars.some(v =>
+            removeDiacritics(v.toLowerCase()).includes(term)
+        );
+
+        const textMatch =
+            cmd.includes(term) ||
+            comm.includes(term) ||
+            tags.includes(term) ||
+            varsMatch;
+
         return categoryMatch && textMatch;
     });
+
     renderNotes(filtered);
 }
 
