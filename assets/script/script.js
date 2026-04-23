@@ -1,6 +1,5 @@
 const notesData = [
-    ...jsData,
-    ...gitData
+    ...terminalData
 ];
 
 const container = document.getElementById('terminal-output');
