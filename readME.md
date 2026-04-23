@@ -1,6 +1,7 @@
 # kytka9notes 
 
 Nájdi potrebný kód alebo príkaz skôr, než stihneš otvoriť Google.
+
 Bleskový **[👉CHEAT SHEET](https://kytka9.github.io/kytka9notes/)** vytvorený pre programátorov z SK🇸🇰 a CZ🇨🇿 (ale hlavne pre pohodlie autora 😎).
 
 ## V skratke
