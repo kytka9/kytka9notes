@@ -1,31 +1,15 @@
-# kytka9notes 🚀
+# kytka9notes 
 
-Jednoduchý a rýchly **osobný terminálový zápisník** pre programátorské príkazy a poznámky. Projekt je navrhnutý tak, aby fungoval ako bleskový "cheat sheet" s okamžitým vyhľadávaním a kategorizáciou.
+Nájdi potrebný kód alebo príkaz skôr, než stihneš otvoriť Google.
+Bleskový **[CHEAT SHEET](https://kytka9.github.io/kytka9notes/)** pre programátorov.
 
-## ✨ Funkcie
-- 🔍 **Okamžité vyhľadávanie:** Hľadá v príkazoch, komentároch aj premenných.
-- 🗂️ **Kategorizácia:** Filtrovanie podľa technológií (Git, Linux, JS).
-- 📱 **Responzívny dizajn:** Optimalizované pre desktop aj mobilné zariadenia.
-- 🌑 **Dark Mode:** Šetrný k očiam v štýle pravého terminálu.
+## ✨ V skratke
+- 🔍 **Instantné hľadanie** (príkazy, premenné, komentáre)
+- 🗂️ **Filtre** pre Git, macOS, JavaScript a pod.
+- 🌑 **Čistý terminálový dizajn**
 
-## 🛠️ Technológie
-- **HTML5** & **CSS3** (Custom properties, Flexbox)
-- **JavaScript (ES6+)** – modulárne načítavanie dát bez potreby frameworkov
-- **Font Awesome** – ikonky
+## 🛠️ Tech Stack
+Žiadne zbytočné knižnice, čistý výkon - HTML5, CSS3 (Flexbox), Vanilla JS (ES6+).
 
-## 📂 Štruktúra dát
-Dáta sú rozdelené do samostatných súborov v priečinku `/data` pre lepšiu prehľadnosť:
-- `javascript.js`
-- `git.js`
-- `linux.js`
-
-## 🚀 Ako pridať novú poznámku
-1. Otvor príslušný súbor v priečinku `/data`.
-2. Pridaj nový objekt do poľa:
-```javascript
-{
-    command: "tvoj_prikaz",
-    comment: "// tvoj komentar",
-    vars: ["premenna"],
-    category: "kategoria"
-}
+---
+Built by [@kytka9](https://github.com/kytka9)

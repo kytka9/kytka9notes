@@ -1,9 +1,9 @@
 const terminalData = [
 
     {
-        command: "",
-        comment: "",
-        vars: [""],
+        command: "erw",
+        comment: "ewr",
+        vars: ["ee"],
         category: "terminal"
     },
     {

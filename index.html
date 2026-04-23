@@ -13,26 +13,42 @@
 
     <header class="main-header">
         <h2>kytka9notes</h2>
+        <div class="search-hint">
+            stlač <kbd>TAB</kbd> pre vyhľadávanie
+        </div>
         <a href="https://github.com/kytka9/kytka9notes" target="_blank" class="github-link">
             <i class="fa-brands fa-github"></i>
-            <span>GitHub</span>
         </a>
+        <div class="header-time">
+            <span id="live-clock">00:00:00</span>
+        </div>
     </header>
+
 
     <div class="filter-container">
         <button class="filter-btn active" data-cat="all">Všetko</button>
         <button class="filter-btn" data-cat="terminal">Terminál</button>
+        <button class="filter-btn" data-cat="git">Git</button>
     </div>
 
     <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Hľadaj príkaz alebo funkciu...">
+        <input type="text" id="searchInput" placeholder="Hľadaj príkaz, funkciu, slovo, hocičo :)">
     </div>
 
     <section id="terminal-output"></section>
 
+    <br>
+    <span id="note-count" class="badge">0 príkazov</span>
+    <div class="last-update">
+        <i class="fa-regular fa-clock"></i>
+        <span>Posledná úprava: 22. 04. 2026</span>
+    </div>
+    <h5>kytka9</h5>
+
     <!-- IMPORT POZNÁMOK -->
     <script src="./assets/data/terminal.js"></script>
-    
+    <script src="./assets/data/git.js"></script>
+
     <script src="./assets/script/script.js"></script>
 
 </body>

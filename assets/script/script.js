@@ -1,6 +1,15 @@
 const notesData = [
-    ...terminalData
+    ...terminalData,
+    ...gitData,
 ];
+
+// Celkový počet poznámok
+document.getElementById('note-count').innerText = `Celkovo ${notesData.length} príkazov`;
+// Aktuálny čas
+setInterval(() => {
+    document.getElementById('live-clock').innerText = new Date().toLocaleTimeString();
+}, 1000);
+
 
 const container = document.getElementById('terminal-output');
 const searchInput = document.getElementById('searchInput');

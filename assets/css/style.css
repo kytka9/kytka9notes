@@ -54,6 +54,20 @@ body {
     transition: transform 0.2s;
 }
 
+kbd {
+    background-color: #21262d;
+    border: 1px solid #30363d;
+    border-radius: 3px;
+    padding: 1px 4px;
+    font-size: 0.8rem;
+    color: #8b949e;
+}
+
+.header-time {
+    font-size: 0.9rem;
+    color: #5e6268;
+}
+
 /* KATEGÓRIE (FILTRE) */
 .filter-container, 
 .search-container, 
