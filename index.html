@@ -11,6 +11,7 @@
 
 <body>
 
+    <!-- Hlavička -->
     <header class="main-header">
         <h2>kytka9notes</h2>
         <div class="search-hint">
@@ -24,13 +25,17 @@
         </div>
     </header>
 
-
+    <!-- Menu - filtre -->
     <div class="filter-container">
         <button class="filter-btn active" data-cat="all">Všetko</button>
-        <button class="filter-btn" data-cat="terminal">Terminál</button>
+        <button class="filter-btn" data-cat="terminal">macOS</button>
         <button class="filter-btn" data-cat="git">Git</button>
+        <button class="filter-btn" data-cat="html">HTML</button>
+        <button class="filter-btn" data-cat="css">CSS</button>
+        <button class="filter-btn" data-cat="js">JavaScript</button>
     </div>
 
+    <!-- Poznámky -->
     <div class="search-container">
         <input type="text" id="searchInput" placeholder="Hľadaj príkaz, funkciu, tag, hocičo...">
     </div>
@@ -49,7 +54,11 @@
     <!-- IMPORT POZNÁMOK -->
     <script src="./assets/data/terminal.js"></script>
     <script src="./assets/data/git.js"></script>
+    <script src="./assets/data/html.js"></script>
+    <script src="./assets/data/css.js"></script>
+    <script src="./assets/data/javascript.js"></script>
 
+    <!-- Hlavný script -->
     <script src="./assets/script/script.js"></script>
 
 </body>

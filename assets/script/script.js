@@ -1,6 +1,9 @@
 const notesData = [
     ...terminalData,
     ...gitData,
+    ...htmlData,
+    ...cssData,
+    ...jsData,
 ];
 
 // Celkový počet poznámok
@@ -26,38 +29,53 @@ function renderNotes(data) {
     data.forEach(item => {
         const p = document.createElement('p');
         let varsHtml = item.vars.map(v => `<span class="var">${v}</span>`).join(' ');
-        p.innerHTML = `${item.command} ${varsHtml} <span class="comment">${item.comment}</span>`;
+        let iconHtml = item.icon 
+            ? `<i class="${item.icon} fa-xl" style="color: ${item.color || '#fff'}; margin-right: 12px;"></i>` 
+            : '';
+        p.innerHTML = `${item.command} ${varsHtml} <span class="comment">${iconHtml}${item.comment}</span>`;
         container.appendChild(p);
     });
 }
 
 function updateDisplay() {
-    // 1. Očistíme hľadaný výraz od diakritiky a dáme na malé písmená
     const term = removeDiacritics(searchInput.value.toLowerCase());
+    const filteredResults = [];
+    let lastHeading = null;
 
-    const filtered = notesData.filter(item => {
+    notesData.forEach(item => {
+        // 1. Ak je to nadpis (prázdny command), uložíme si ho a ideme ďalej
+        if (!item.command || item.command.trim() === "") {
+            lastHeading = item;
+            return;
+        }
+
+        // 2. Príprava textov na porovnanie (bez diakritiky)
         const categoryMatch = currentCategory === 'all' || item.category === currentCategory;
-
-        // 2. Pripravíme si texty z dát (tiež bez diakritiky)
         const cmd = removeDiacritics(item.command.toLowerCase());
         const comm = removeDiacritics(item.comment.toLowerCase());
         const tags = item.tags ? removeDiacritics(item.tags.toLowerCase()) : "";
+        
+        // Kontrola aj v poli vars
+        const varsMatch = item.vars.some(v => removeDiacritics(v.toLowerCase()).includes(term));
 
-        // Skontrolujeme aj premenné vo vars
-        const varsMatch = item.vars.some(v =>
-            removeDiacritics(v.toLowerCase()).includes(term)
-        );
+        const textMatch = cmd.includes(term) || comm.includes(term) || tags.includes(term) || varsMatch;
 
-        const textMatch =
-            cmd.includes(term) ||
-            comm.includes(term) ||
-            tags.includes(term) ||
-            varsMatch;
-
-        return categoryMatch && textMatch;
+        // 3. Ak máme zhodu
+        if (categoryMatch && textMatch) {
+            // Ak sme pod novým nadpisom, ktorý ešte nie je vo výsledkoch, pridáme ho
+            if (lastHeading && !filteredResults.includes(lastHeading)) {
+                filteredResults.push(lastHeading);
+            }
+            filteredResults.push(item);
+        }
     });
 
-    renderNotes(filtered);
+    renderNotes(filteredResults);
+    
+    // Počítadlo (počíta len reálne príkazy, nie nadpisy)
+    const realCount = filteredResults.filter(i => i.command && i.command.trim() !== "").length;
+    const counterElement = document.getElementById('counter'); // Uisti sa, že máš v HTML id="counter"
+    if (counterElement) counterElement.textContent = `Celkovo ${realCount} príkazov`;
 }
 
 // Eventy pre tlačidlá
