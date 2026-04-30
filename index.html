@@ -2,64 +2,64 @@
 <html lang="sk">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>kytka9notes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>kytka9notes</title>
 </head>
 
 <body>
 
-    <!-- Hlavička -->
-    <header class="main-header">
-        <h2>kytka9notes</h2>
-        <div class="search-hint">
-            stlač <kbd>TAB</kbd> pre vyhľadávanie
-        </div>
-        <a href="https://github.com/kytka9/kytka9notes" target="_blank" class="github-link">
-            <i class="fa-brands fa-github"></i>
-        </a>
-        <div class="header-time">
-            <span id="live-clock">00:00:00</span>
-        </div>
-    </header>
-
-    <!-- Menu - filtre -->
-    <div class="filter-container">
-        <button class="filter-btn active" data-cat="all">Všetko</button>
-        <button class="filter-btn" data-cat="terminal">macOS</button>
-        <button class="filter-btn" data-cat="git">Git</button>
-        <button class="filter-btn" data-cat="html">HTML</button>
-        <button class="filter-btn" data-cat="css">CSS</button>
-        <button class="filter-btn" data-cat="js">JavaScript</button>
+  <!-- Hlavička -->
+  <header class="main-header">
+    <h2>kytka9notes</h2>
+    <div class="search-hint">
+      <i class="fa-solid fa-magnifying-glass" style="color: rgb(206, 206, 206);"></i><kbd>TAB</kbd>
     </div>
-
-    <!-- Poznámky -->
-    <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Hľadaj príkaz, funkciu, tag, hocičo...">
+    <a href="https://github.com/kytka9/kytka9notes" target="_blank" class="github-link">
+      <i class="fa-brands fa-github"></i>
+    </a>
+    <div class="header-time">
+      <span id="live-clock">00:00:00</span>   
     </div>
+  </header>
 
-    <section id="terminal-output"></section>
+  <!-- Menu - filtre -->
+  <div class="filter-container">
+    <button class="filter-btn active" data-cat="all">Všetko</button>
+    <button class="filter-btn" data-cat="terminal">macOS</button>
+    <button class="filter-btn" data-cat="git">Git</button>
+    <button class="filter-btn" data-cat="html">HTML</button>
+    <button class="filter-btn" data-cat="css">CSS</button>
+    <button class="filter-btn" data-cat="js">JavaScript</button>
+  </div>
 
-    <!-- Pätička -->
-    <br>
-    <span id="note-count" class="badge">0 príkazov</span>
-    <div class="last-update">
-        <i class="fa-regular fa-clock"></i>
-        <span>Posledná úprava: 23. 04. 2026</span>
-    </div>
-    <h5>kytka9</h5>
+  <!-- Poznámky -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Hľadaj príkaz, funkciu, tag, hocičo...">
+  </div>
 
-    <!-- IMPORT POZNÁMOK -->
-    <script src="./assets/data/terminal.js"></script>
-    <script src="./assets/data/git.js"></script>
-    <script src="./assets/data/html.js"></script>
-    <script src="./assets/data/css.js"></script>
-    <script src="./assets/data/javascript.js"></script>
+  <section id="terminal-output"></section>
 
-    <!-- Hlavný script -->
-    <script src="./assets/script/script.js"></script>
+  <!-- Pätička -->
+  <br>
+  <span id="note-count" class="badge">0 príkazov</span>
+  <div class="last-update">
+    <i class="fa-regular fa-clock"></i>
+    <span>Posledná úprava: 23. 04. 2026</span>
+  </div>
+  <h5>kytka9</h5>
+
+  <!-- IMPORT POZNÁMOK -->
+  <script src="./assets/data/terminal.js"></script>
+  <script src="./assets/data/git.js"></script>
+  <script src="./assets/data/html.js"></script>
+  <script src="./assets/data/css.js"></script>
+  <script src="./assets/data/javascript.js"></script>
+
+  <!-- Hlavný script -->
+  <script src="./assets/script/script.js"></script>
 
 </body>
 
