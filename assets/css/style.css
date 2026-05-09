@@ -1,4 +1,10 @@
 /* ZÁKLADNÉ */
+:root {
+  --safari-color: #2c92ff;
+  --markdown-color: #2a79b5;
+  --html-color: #E34F26;
+}
+
 * {
     box-sizing: border-box;
 }

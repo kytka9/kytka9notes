@@ -8,7 +8,7 @@ const htmlData = [
         comment: "HTML entity (špeciálne znaky)",
         vars: [],
         icon: "fa-brands fa-html5",
-        color: "#E34F26",
+        color: "var(--html-color)",
         category: "html",
         tags: "entity špeciálne znaky symboly"
     },
@@ -47,8 +47,6 @@ const htmlData = [
         category: "html",
         tags: "entity symbol"
     },
-
-
     {
         command: "&amp;amp;",
         comment: "// Znak ampersand ( & )",
@@ -128,7 +126,7 @@ const htmlData = [
         comment: "Základná štruktúra dokumentu",
         vars: [],
         icon: "fa-brands fa-html5",
-        color: "#E34F26",
+        color: "var(--html-color)",
         category: "html",
         tags: "html štruktúra základy"
     },
@@ -169,7 +167,7 @@ const htmlData = [
         comment: "Head a metadáta",
         vars: [],
         icon: "fa-brands fa-html5",
-        color: "#E34F26",
+        color: "var(--html-color)",
         category: "html",
         tags: "meta head metadáta"
     },
@@ -266,7 +264,7 @@ const htmlData = [
         comment: "Sémantické elementy (HTML5)",
         vars: [],
         icon: "fa-brands fa-html5",
-        color: "#E34F26",
+        color: "var(--html-color)",
         category: "html",
         tags: "sémantika layout sekcia HTML5"
     },
@@ -377,7 +375,7 @@ const htmlData = [
         comment: "Kontajnery a rozloženie",
         vars: [],
         icon: "fa-brands fa-html5",
-        color: "#E34F26",
+        color: "var(--html-color)",
         category: "html",
         tags: "div span kontajner layout"
     },
@@ -404,7 +402,7 @@ const htmlData = [
         comment: "Text a formátovanie",
         vars: [],
         icon: "fa-brands fa-html5",
-        color: "#E34F26",
+        color: "var(--html-color)",
         category: "html",
         tags: "text nadpisy formátovanie"
     },
@@ -613,7 +611,7 @@ const htmlData = [
         comment: "Odkazy a médiá",
         vars: [],
         icon: "fa-brands fa-html5",
-        color: "#E34F26",
+        color: "var(--html-color)",
         category: "html",
         tags: "odkazy obrázky média"
     },
@@ -724,7 +722,7 @@ const htmlData = [
         comment: "Zoznamy",
         vars: [],
         icon: "fa-brands fa-html5",
-        color: "#E34F26",
+        color: "var(--html-color)",
         category: "html",
         tags: "zoznamy list"
     },
@@ -779,7 +777,7 @@ const htmlData = [
         comment: "Tabuľky",
         vars: [],
         icon: "fa-brands fa-html5",
-        color: "#E34F26",
+        color: "var(--html-color)",
         category: "html",
         tags: "tabuľka table dáta"
     },
@@ -862,7 +860,7 @@ const htmlData = [
         comment: "Formuláre a vstupy",
         vars: [],
         icon: "fa-brands fa-html5",
-        color: "#E34F26",
+        color: "var(--html-color)",
         category: "html",
         tags: "formulár input button"
     },
@@ -1092,7 +1090,7 @@ const htmlData = [
         comment: "Skriptovanie a interaktivita",
         vars: [],
         icon: "fa-brands fa-html5",
-        color: "#E34F26",
+        color: "var(--html-color)",
         category: "html",
         tags: "javascript skript interakcia"
     },
@@ -1140,7 +1138,7 @@ const htmlData = [
         comment: "Globálne atribúty (použiteľné na každom elemente)",
         vars: [],
         icon: "fa-brands fa-html5",
-        color: "#E34F26",
+        color: "var(--html-color)",
         category: "html",
         tags: "atribúty globálne"
     },

@@ -1,15 +1,29 @@
 const notesData = [
   ...macOSData,
   ...markdownData,
+  ...safariData,
   ...htmlData,
 ];
 
 // Celkový počet poznámok
 document.getElementById('note-count').innerText = `Celkovo ${notesData.length} príkazov, skratiek a funkcií :)`;
+
 // Aktuálny čas
 setInterval(() => {
   document.getElementById('live-clock').innerText = new Date().toLocaleTimeString();
 }, 1000);
+
+// Posledná aktualizácia stránky
+const datum = new Date(document.lastModified);
+const formatovanyDatum = datum.toLocaleDateString('sk-SK', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric'
+});
+document.getElementById('posledna-uprava').innerText = formatovanyDatum;
+
+
+
 // Vyhľadávanie bez diakritiky
 const removeDiacritics = (str) => {
   return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
