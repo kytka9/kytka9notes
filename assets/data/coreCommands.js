@@ -1,4 +1,4 @@
-const macOSData = [
+const coreCommandsData = [
     // Špeciálne macOS príkazy
     {
         command: "",

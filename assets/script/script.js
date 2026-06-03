@@ -1,5 +1,6 @@
 const notesData = [
-  ...macOSData,
+  ...coreCommandsData,
+  ...finderData,
   ...markdownData,
   ...safariData,
   ...htmlData,
