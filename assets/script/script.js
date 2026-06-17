@@ -1,4 +1,5 @@
 const notesData = [
+  ...brewData,
   ...coreCommandsData,
   ...finderData,
   ...markdownData,
