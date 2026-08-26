@@ -13,4 +13,4 @@ Bleskový **[👉CHEAT SHEET](https://kytka9.github.io/kytka9notes/)** vytvoren�
   <img src="https://img.shields.io/badge/Font_Awesome-%233366CC.svg?style=for-the-badge&logo=fort-awesome&logoColor=white" />
 
 ---
-**Discord:** `kytka9`
+**e-mail:** `kytka9@proton.me`
