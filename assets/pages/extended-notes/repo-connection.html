@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vytvorenie repozitára – Poznamky</title>
+  <link rel="stylesheet" href="../../css/extended-notes/extended-notes-content.css">
+</head>
+
+<body>
+
+  <div class="notes-container">
+
+    <header class="notes-header">
+      <a href="../../../index.html" class="back-link">&larr; Späť</a>
+      <h2 class="notes-title">Prepojenie repa</h2>
+    </header>
+
+    <main class="note-card">
+      <h1>Ako zistiť prepojenie s repozitárom</h1>
+      <p>Pre zobrazenie adresy vzdialeného repozitára (remote), na ktorý je projekt napojený, spusti príkaz:</p>
+      <code>git remote -v</code>
+      <ul>
+        <li>Ak projekt JE prepojený: Vypíšu sa URL adresy s označením origin (pre fetch aj push).</li>
+        <li>Ak projekt NIE JE prepojený: Príkaz nevráti žiadny výstup.</li>
+        <li>Ak adresár vôbec nie je Git repozitárom: Zobrazí sa chybová hláška fatal: not a git repository.</li>
+      </ul>
+      <h1>Ako odstrániť prepojenie na repozitár</h1>
+      <p>Máš dve možnosti podľa toho, čo presne chceš dosiahnuť:</p>
+      <p>A: Odpojiť len vzdialený GitHub repozitár (ponechá lokálnu Git históriu): Týmto príkazom zmažeš iba prepojenie
+        na online server (GitHub). Tvoj lokálny kód aj história commitov zostanú nedotknuté.</p>
+      <code>git remote remove origin</code>
+      <p>B: Úplne zrušiť Git v projekte (vymaže celú Git históriu): Ak chceš z projektu odstrániť akúkoľvek stopu Gitu a
+        spraviť z neho obyčajný priečinok, stačí vymazať skrytý priečinok .git</p>
+      <code>rm -rf .git</code>
+
+    </main>
+
+    <header class="notes-header">
+      <a href="../../../index.html" class="back-link">&larr; Späť</a>
+    </header>
+
+  </div>
+
+</body>
+
+</html>
+
+<!-- <pre><code>
+        git init 
+        git add .
+git commit -m <span class="comment">"coment commit"</span></code></pre> -->
+
+<!-- <div class="callout">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque iusto tempore maxime, placeat, vel nihil
+          dolorum sint nam ut velit doloremque ipsum, sunt ab? Blanditiis earum aliquid rem dicta dignissimos.</p>
+      </div> -->

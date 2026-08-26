@@ -5,6 +5,7 @@ const notesData = [
   ...markdownData,
   ...safariData,
   ...htmlData,
+  ...gitData,
 ];
 
 // Celkový počet poznámok

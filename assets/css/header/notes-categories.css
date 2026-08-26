@@ -26,6 +26,9 @@
 }
 
 .filter-btn.active {
-    background-color: #236192;
-    border-color: #236192;
+    /* background-color: #236192;
+    border-color: #236192; */
+    background-color: #dfe3e6;
+    border-color: #0d0d0d;
+    color: #030303;
 }
