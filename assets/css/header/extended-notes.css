@@ -1,0 +1,36 @@
+.extended-notes {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.extended-note {
+    background-color: #236192;
+    color: #dbdcdd;
+    border: 1px solid #30363d;
+    padding: 6px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.extended-note:hover {
+    background-color: #30363d;
+    border-color: #8b949e;
+}
+
+.extended-note a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}

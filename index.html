@@ -4,20 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <title>kytka9notes</title>
+  <!-- link css -->
+  <link rel="stylesheet" href="./assets/css/main/style.css">
+  <link rel="stylesheet" href="./assets/css/main/notes.css">
+  <link rel="stylesheet" href="./assets/css/header/external-links.css">
+  <link rel="stylesheet" href="./assets/css/header/header.css">
+  <link rel="stylesheet" href="./assets/css/header/extended-notes.css">
+  <link rel="stylesheet" href="./assets/css/header/notes-categories.css">
 </head>
 
 <body>
 
-  <!-- Užitočné odkazy -->
+  <!-- External links -->
   <div class="external-links">
-    <button class="external-link"><a href="https://overapi.com/" target="_blank" rel="noopener noreferrer">OverAPI</a></button>
-    <button class="external-link"><a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener noreferrer">mdn_</a></button>
-    <button class="external-link"><a href="https://livecodes.io" target="_blank" rel="noopener noreferrer">livecodes.io</a></button>
-    <button class="external-link"><a href="https://fontawesome.com/search?q=html" target="_blank" rel="noopener noreferrer">fontAwesome</a></button>
-    <button class="external-link"><a href="https://www.asciitable.com" target="_blank" rel="noopener noreferrer">ascii</a></button>
+    <button class="external-link"><a href="https://overapi.com/" target="_blank"
+        rel="noopener noreferrer">OverAPI</a></button>
+    <button class="external-link"><a href="https://developer.mozilla.org/en-US/" target="_blank"
+        rel="noopener noreferrer">mdn_</a></button>
+    <button class="external-link"><a href="https://livecodes.io" target="_blank"
+        rel="noopener noreferrer">livecodes.io</a></button>
+    <button class="external-link"><a href="https://fontawesome.com/search?q=html" target="_blank"
+        rel="noopener noreferrer">fontAwesome</a></button>
+    <button class="external-link"><a href="https://www.asciitable.com" target="_blank"
+        rel="noopener noreferrer">ascii</a></button>
   </div>
 
 
@@ -31,13 +42,18 @@
       <i class="fa-brands fa-github"></i>
     </a>
     <div class="header-time">
-      <span id="live-clock">00:00:00</span>   
+      <span id="live-clock">00:00:00</span>
     </div>
     <div>command</div>
     <div class="var">var</div>
     <div class="comment">comment</div>
-    
   </header>
+
+  <!-- Rozšírené poznámky - Extended notes -->
+  <div class="extended-notes">
+    <button class="extended-note"><a href="./assets/pages/extended-notes/repo-create.html">Vytvorenie gh repa</a></button>
+  </div>
+
 
   <!-- Menu - filtre -->
   <div class="filter-container">
@@ -53,7 +69,7 @@
     <!-- <button class="filter-btn" data-cat="js">JavaScript</button> -->
   </div>
 
-  
+
 
   <!-- Poznámky -->
   <div class="search-container">
@@ -62,7 +78,7 @@
 
   <section id="terminal-output"></section>
 
-  
+
 
   <!-- Pätička -->
   <br>

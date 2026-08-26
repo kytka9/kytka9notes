@@ -1,0 +1,54 @@
+/* HEADER */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.main-header h2 {
+    margin: 0;
+    color: #236192;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #c9d1d9;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 5px 12px;
+    border-radius: 6px;
+    background-color: #21262d;
+    border: 1px solid #30363d;
+    transition: 0.3s;
+}
+
+.github-link i {
+    font-size: 1.4rem;
+}
+
+.github-link:hover {
+    background-color: #30363d;
+    color: #236192;
+    border-color: #8b949e;
+    transform: scale(1.2) rotate(10deg);
+    transition: transform 0.2s;
+}
+
+kbd {
+    background-color: #21262d;
+    border: 1px solid #30363d;
+    border-radius: 3px;
+    padding: 1px 4px;
+    font-size: 0.8rem;
+    color: #9e8b8b;
+}
+
+.header-time {
+    font-size: 0.9rem;
+    color: #5e6268;
+}

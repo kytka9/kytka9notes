@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vytvorenie repozitára – Poznamky</title>
+  <link rel="stylesheet" href="../../css/extended-notes/extended-notes-content.css">
+</head>
+
+<body>
+
+  <div class="notes-container">
+
+    <header class="notes-header">
+      <a href="../../../index.html" class="back-link">&larr; Späť</a>
+      <h2 class="notes-title">Vytvorenie gh repa</h2>
+    </header>
+
+    <main class="note-card">
+      <h1>Vytvorenie a naplnenie repozitára na github CEZ TERMINÁL</h1>
+      <p>1. Prejdi do priečinka s tvojím projektom</p>
+      <code>cd ~/Documents/moj-projekt</code>
+
+      <p>2. Inicializuj Git repozitár</p>
+      <code>git init</code>
+
+      <p>3. Pridaj súbory a urob prvý commit</p>
+      <code>git add .</code><br>
+      <code>git commit -m "coment commit"</code>
+
+      <p>4. Vytvor nový repozitár na GitHube (potrebné GitHubCLI: gh —version)</p>
+      <code>gh repo create nazov-tvojho-repa --public --source=. --remote=nazov-aliasu-repa --push</code>
+      <p>Tento príkaz:
+      <ul>
+        <li>vytvorí repozitár na GitHube</li>
+        <li>pridá vzdialený alias</li>
+        <li>a rovno pushne tvoj projekt</li>
+      </ul>
+      </p>
+
+      <p>5. Overenie</p>
+      <code>git remote -v</code>
+      <p>Správny výstup, niečo ako:</p>
+      <code>alias-repa https://github.com/tvojemeno/nazov-tvojho-repa.git (fetch)</code><br>
+      <code>alias-repa https://github.com/tvojemeno/nazov-tvojho-repa.git (push)</code>
+
+    </main>
+
+    <header class="notes-header">
+      <a href="../../../index.html" class="back-link">&larr; Späť</a>
+    </header>
+
+  </div>
+
+</body>
+
+</html>
+
+<!-- <pre><code>
+        git init 
+        git add .
+git commit -m <span class="comment">"coment commit"</span></code></pre> -->
+
+      <!-- <div class="callout">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque iusto tempore maxime, placeat, vel nihil
+          dolorum sint nam ut velit doloremque ipsum, sunt ab? Blanditiis earum aliquid rem dicta dignissimos.</p>
+      </div> -->
