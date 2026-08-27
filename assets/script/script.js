@@ -10,7 +10,7 @@ const notesData = [
 ];
 
 // Celkový počet poznámok
-document.getElementById('note-count').innerText = `Celkovo ${notesData.length} príkazov, skratiek a funkcií :)`;
+document.getElementById('note-count').innerText = `Celkovo ${notesData.length} príkazov, skratiek a funkcií 😎`;
 
 // Aktuálny čas
 setInterval(() => {
