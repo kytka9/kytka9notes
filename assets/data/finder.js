@@ -23,6 +23,13 @@ const finderData = [
         category: "finder",
         tags: "finder shortcut"
     },
+    {
+        command: "⌘ + shift + .",
+        comment: "// Zobraziť skryté súbory",
+        vars: [],
+        category: "finder",
+        tags: "finder shortcut"
+    },
     // ==========================================
     // KATEGÓRIA: ZÁKLADNÉ OVLÁDANIE (Zatvorenie a minimalizácia)
     // ==========================================

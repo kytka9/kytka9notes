@@ -2,7 +2,7 @@ const safariData = [
   // command ⌘
   // option ⌥
   // control ⌃
-  // shift ⇧
+  // shift ↑
 
   // Vývojár
   {

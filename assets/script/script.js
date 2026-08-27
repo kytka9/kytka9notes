@@ -1,11 +1,12 @@
 const notesData = [
   ...brewData,
+  ...gitData,
   ...coreCommandsData,
   ...finderData,
   ...markdownData,
   ...safariData,
   ...htmlData,
-  ...gitData,
+  ...vscData,
 ];
 
 // Celkový počet poznámok

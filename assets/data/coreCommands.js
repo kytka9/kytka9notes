@@ -4,7 +4,7 @@ const coreCommandsData = [
         command: "",
         comment: 'Špeciálne macOS príkazy',
         vars: [],
-        icon: "fa-solid fa-terminal",
+        icon: "fa-regular fa-folder-open",
         color: "#1e747f",
         category: "terminal",
         tags: "špeciálne macOS príkazy macOS"
@@ -50,7 +50,7 @@ const coreCommandsData = [
         command: "",
         comment: "Vyhľadávanie a informácie",
         vars: [],
-        icon: "fa-solid fa-terminal",
+        icon: "fa-regular fa-folder-open",
         color: "#1e747f",
         category: "terminal",
         tags: "vyhľadávanie informácie macOS"
@@ -102,7 +102,7 @@ const coreCommandsData = [
         command: "",
         comment: "Navigácia a výpis",
         vars: [],
-        icon: "fa-solid fa-terminal",
+        icon: "fa-regular fa-folder-open",
         color: "#1e747f",
         category: "terminal",
         tags: "navigácia výpis macOS"
@@ -196,7 +196,7 @@ const coreCommandsData = [
         command: "",
         comment: "Vytváranie a úprava",
         vars: [],
-        icon: "fa-solid fa-terminal",
+        icon: "fa-regular fa-folder-open",
         color: "#1e747f",
         category: "terminal",
         tags: "vytváranie úprava macOS"
@@ -234,7 +234,7 @@ const coreCommandsData = [
         command: "",
         comment: "Vymazanie",
         vars: [],
-        icon: "fa-solid fa-terminal",
+        icon: "fa-regular fa-folder-open",
         color: "#1e747f",
         category: "terminal",
         tags: "vymazanie delete macOS"
@@ -300,7 +300,7 @@ const coreCommandsData = [
         command: "",
         comment: "Kopírovanie, presun a premenovanie",
         vars: [],
-        icon: "fa-solid fa-terminal",
+        icon: "fa-regular fa-folder-open",
         color: "#1e747f",
         category: "terminal",
         tags: "kopírovanie presun premenovanie macOS"
@@ -343,7 +343,7 @@ const coreCommandsData = [
     {
         command: "mv",
         comment: "// Presunie súbor alebo priečinok ",
-        vars: ["súbor/priečinok cieľ"],
+        vars: ["súbor/priečinok ./cieľ/"],
         category: "terminal",
         tags: "kopírovanie presun premenovanie macOS"
     },
