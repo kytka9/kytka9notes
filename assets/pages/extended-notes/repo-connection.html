@@ -17,6 +17,7 @@
     </header>
 
     <main class="note-card">
+
       <h1>Ako zistiť prepojenie s repozitárom</h1>
       <p>Pre zobrazenie adresy vzdialeného repozitára (remote), na ktorý je projekt napojený, spusti príkaz:</p>
       <code>git remote -v</code>
@@ -25,6 +26,7 @@
         <li>Ak projekt NIE JE prepojený: Príkaz nevráti žiadny výstup.</li>
         <li>Ak adresár vôbec nie je Git repozitárom: Zobrazí sa chybová hláška fatal: not a git repository.</li>
       </ul>
+
       <h1>Ako odstrániť prepojenie na repozitár</h1>
       <p>Máš dve možnosti podľa toho, čo presne chceš dosiahnuť:</p>
       <p>A: Odpojiť len vzdialený GitHub repozitár (ponechá lokálnu Git históriu): Týmto príkazom zmažeš iba prepojenie
@@ -33,6 +35,27 @@
       <p>B: Úplne zrušiť Git v projekte (vymaže celú Git históriu): Ak chceš z projektu odstrániť akúkoľvek stopu Gitu a
         spraviť z neho obyčajný priečinok, stačí vymazať skrytý priečinok .git</p>
       <code>rm -rf .git</code>
+
+      <h1>Ako vytvoriť prepojenie na existujúci repozitár</h1>
+      <p>1. prejdi do priečinka projektu: <code>cd nazov-projektu</code></p>
+      <p>2. Ak projekt ešte nie je Git repozitár, inicializuj Git: <code>git init</code> (Tým sa v projekte vytvorí
+        skrytý priečinok .git, v ktorom Git uchováva históriu a nastavenia repozitára.)</p>
+      <p>3. Pridaj vzdialený repozitár:</p>
+      <code>git remote add origin https://github.com/username/repositary.git</code>
+      <p class="callout"><code>origin</code> je názov vzdialeného repozitára, je to bežný štandardný názov, ale
+        technicky môžeš použiť aj iný</p>
+      <p>4. Skontroluj, či sa prepojenie podarilo:</p>
+      <code>git remote -v</code>
+
+      <h1>Ako zmeniť prepojenie na iný repozitár</h1>
+      <p>Ak je projekt už napojený na nejaký repozitár, ale chceš ho napojiť na iný:</p>
+      <p>Možnosť A: zmeniť URL existujúceho remote</p>
+      <code>git remote set-url origin https://github.com/username/new-repositary.git</code>
+      <p>Výhoda je, že zostane zachovaná lokálna Git história aj všetky ostatné nastavenia.</p>
+      <p>Možnosť B: odstrániť starý remote a pridať nový</p>
+      <code>git remote remove origin</code>
+      <p>potom:</p>
+      <code>git remote add origin https://github.com/username/new-repositary.git</code>
 
     </main>
 
