@@ -26,6 +26,8 @@
         <li>Ak projekt NIE JE prepojený: Príkaz nevráti žiadny výstup.</li>
         <li>Ak adresár vôbec nie je Git repozitárom: Zobrazí sa chybová hláška fatal: not a git repository.</li>
       </ul>
+      <br>
+      <br>
 
       <h1>Ako odstrániť prepojenie na repozitár</h1>
       <p>Máš dve možnosti podľa toho, čo presne chceš dosiahnuť:</p>
@@ -35,6 +37,8 @@
       <p>B: Úplne zrušiť Git v projekte (vymaže celú Git históriu): Ak chceš z projektu odstrániť akúkoľvek stopu Gitu a
         spraviť z neho obyčajný priečinok, stačí vymazať skrytý priečinok .git</p>
       <code>rm -rf .git</code>
+      <br>
+      <br>
 
       <h1>Ako vytvoriť prepojenie na existujúci repozitár</h1>
       <p>1. prejdi do priečinka projektu: <code>cd nazov-projektu</code></p>
@@ -42,16 +46,22 @@
         skrytý priečinok .git, v ktorom Git uchováva históriu a nastavenia repozitára.)</p>
       <p>3. Pridaj vzdialený repozitár:</p>
       <code>git remote add origin https://github.com/username/repositary.git</code>
-      <p class="callout"><code>origin</code> je názov vzdialeného repozitára, je to bežný štandardný názov, ale
-        technicky môžeš použiť aj iný</p>
+      <ul>
+        <li>origin, je názov vzdialeného repozitára, je to bežný štandardný názov, ale
+        technicky môžeš použiť aj iný</li>
+      </ul>
       <p>4. Skontroluj, či sa prepojenie podarilo:</p>
       <code>git remote -v</code>
+      <br>
+      <br>
 
       <h1>Ako zmeniť prepojenie na iný repozitár</h1>
       <p>Ak je projekt už napojený na nejaký repozitár, ale chceš ho napojiť na iný:</p>
+      <br>
       <p>Možnosť A: zmeniť URL existujúceho remote</p>
       <code>git remote set-url origin https://github.com/username/new-repositary.git</code>
       <p>Výhoda je, že zostane zachovaná lokálna Git história aj všetky ostatné nastavenia.</p>
+      <br>
       <p>Možnosť B: odstrániť starý remote a pridať nový</p>
       <code>git remote remove origin</code>
       <p>potom:</p>
