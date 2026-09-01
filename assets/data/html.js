@@ -20,35 +20,35 @@ const htmlData = [
     tags: "entity medzera"
   },
   {
-    command: "&#58;",
+    command: "&amp;#58;",
     comment: "// Dvojbodka ( : )",
     vars: [],
     category: "html",
     tags: "entity medzera"
   },
   {
-    command: "&#40;",
+    command: "&amp;#40;",
     comment: "// Ľavá okrúhla zátvorka (",
     vars: [],
     category: "html",
     tags: "entity medzera"
   },
   {
-    command: "&#41;",
+    command: "&amp;#41;",
     comment: "// Ľavá okrúhla zátvorka )",
     vars: [],
     category: "html",
     tags: "entity medzera"
   },
   {
-    command: "&#91;",
+    command: "&amp;#91;",
     comment: "// Ľavá hranatá zátvorka [",
     vars: [],
     category: "html",
     tags: "entity medzera"
   },
   {
-    command: "&#93",
+    command: "&amp;#93",
     comment: "// Pravá hranatá zátvorka ]",
     vars: [],
     category: "html",
