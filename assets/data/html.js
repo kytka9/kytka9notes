@@ -27,28 +27,28 @@ const htmlData = [
     tags: "entity medzera"
   },
   {
-    command: "&amp;#40;",
+    command: "&amp;lpar;",
     comment: "// Ľavá okrúhla zátvorka (",
     vars: [],
     category: "html",
     tags: "entity medzera"
   },
   {
-    command: "&amp;#41;",
+    command: "&amp;rpar;",
     comment: "// Ľavá okrúhla zátvorka )",
     vars: [],
     category: "html",
     tags: "entity medzera"
   },
   {
-    command: "&amp;#91;",
+    command: "&amp;lsqb;",
     comment: "// Ľavá hranatá zátvorka [",
     vars: [],
     category: "html",
     tags: "entity medzera"
   },
   {
-    command: "&amp;#93",
+    command: "&amp;rsqb",
     comment: "// Pravá hranatá zátvorka ]",
     vars: [],
     category: "html",
@@ -69,14 +69,14 @@ const htmlData = [
     tags: "entity symbol"
   },
   {
-    command: "&amp;lcub;",
+    command: "&amp;lbrace;",
     comment: "// Zložená zátvorka zľava ( { )",
     vars: [],
     category: "html",
     tags: "entity symbol"
   },
   {
-    command: "&amp;rcub;",
+    command: "&amp;rbrace;",
     comment: "// Zložená zátvorka zprava ( } )",
     vars: [],
     category: "html",
