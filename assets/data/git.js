@@ -5,7 +5,7 @@ const gitData = [
     comment: "Git config",
     vars: [],
     icon: "fa-brands fa-git-alt",
-    color: "#c32c2c",
+    color: "var(--git-color)",
     category: "git",
     tags: "git"
   },
@@ -52,7 +52,7 @@ const gitData = [
     comment: "Git info",
     vars: [],
     icon: "fa-brands fa-git-alt",
-    color: "#c32c2c",
+    color: "var(--git-color)",
     category: "git",
     tags: "git"
   },

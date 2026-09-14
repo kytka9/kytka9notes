@@ -5,7 +5,7 @@ const coreCommandsData = [
         comment: 'Špeciálne macOS príkazy',
         vars: [],
         icon: "fa-regular fa-folder-open",
-        color: "#1e747f",
+        color: "var(--core-color)",
         category: "terminal",
         tags: "špeciálne macOS príkazy macOS"
     },
@@ -51,7 +51,7 @@ const coreCommandsData = [
         comment: "Vyhľadávanie a informácie",
         vars: [],
         icon: "fa-regular fa-folder-open",
-        color: "#1e747f",
+        color: "var(--core-color)",
         category: "terminal",
         tags: "vyhľadávanie informácie macOS"
     },
@@ -103,7 +103,7 @@ const coreCommandsData = [
         comment: "Navigácia a výpis",
         vars: [],
         icon: "fa-regular fa-folder-open",
-        color: "#1e747f",
+        color: "var(--core-color)",
         category: "terminal",
         tags: "navigácia výpis macOS"
     },
@@ -197,7 +197,7 @@ const coreCommandsData = [
         comment: "Vytváranie a úprava",
         vars: [],
         icon: "fa-regular fa-folder-open",
-        color: "#1e747f",
+        color: "var(--core-color)",
         category: "terminal",
         tags: "vytváranie úprava macOS"
     },
@@ -235,7 +235,7 @@ const coreCommandsData = [
         comment: "Vymazanie",
         vars: [],
         icon: "fa-regular fa-folder-open",
-        color: "#1e747f",
+        color: "var(--core-color)",
         category: "terminal",
         tags: "vymazanie delete macOS"
     },
@@ -301,7 +301,7 @@ const coreCommandsData = [
         comment: "Kopírovanie, presun a premenovanie",
         vars: [],
         icon: "fa-regular fa-folder-open",
-        color: "#1e747f",
+        color: "var(--core-color)",
         category: "terminal",
         tags: "kopírovanie presun premenovanie macOS"
     },

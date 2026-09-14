@@ -8,7 +8,7 @@ const vscData = [
     comment: "VS Code shortcuts",
     vars: [],
     icon: "fa-solid fa-laptop-code",
-    color: "#2c74e9",
+    color: "var(--vsc-color)",
     category: "vsc",
     tags: "vsc"
   },

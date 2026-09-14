@@ -1,9 +1,13 @@
 /* ZÁKLADNÉ */
 :root {
+  --brew-color: #b0722a;
+  --git-color: #c32c2c;
+  --core-color: #1e747f;
+  --finder-color: #8cdf6e;
+  --md-color: #2a79b5;
   --safari-color: #2c92ff;
-  --markdown-color: #2a79b5;
-  --html-color: #E34F26;
-}
+  --html-color: #c32c2c;
+  --vsc-color: #3570f0;
 
 * {
     box-sizing: border-box;

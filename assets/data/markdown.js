@@ -5,7 +5,7 @@ const markdownData = [
         comment: 'Nadpisy',
         vars: [],
         icon: "fa-brands fa-markdown",
-        color: "var(--markdown-color)",
+        color: "var(--md-color)",
         category: "markdown",
         tags: "markdown"
     },
@@ -42,7 +42,7 @@ const markdownData = [
         comment: 'Formátovanie textu',
         vars: [],
         icon: "fa-brands fa-markdown",
-        color: "var(--markdown-color)",
+        color: "var(--md-color)",
         category: "markdown",
         tags: "markdown"
     },
@@ -79,7 +79,7 @@ const markdownData = [
         comment: 'Zoznamy',
         vars: [],
         icon: "fa-brands fa-markdown",
-        color: "var(--markdown-color)",
+        color: "var(--md-color)",
         category: "markdown",
         tags: "markdown"
     },
@@ -116,7 +116,7 @@ const markdownData = [
         comment: 'Kód',
         vars: [],
         icon: "fa-brands fa-markdown",
-        color: "var(--markdown-color)",
+        color: "var(--md-color)",
         category: "markdown",
         tags: "markdown"
     },
@@ -135,7 +135,7 @@ const markdownData = [
         comment: 'Odkazy a obrázky',
         vars: [],
         icon: "fa-brands fa-markdown",
-        color: "var(--markdown-color)",
+        color: "var(--md-color)",
         category: "markdown",
         tags: "markdown"
     },
@@ -163,7 +163,7 @@ const markdownData = [
         comment: 'Citácie a deliaca čiara',
         vars: [],
         icon: "fa-brands fa-markdown",
-        color: "var(--markdown-color)",
+        color: "var(--md-color)",
         category: "markdown",
         tags: "markdown"
     },

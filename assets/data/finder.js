@@ -5,7 +5,7 @@ const finderData = [
         comment: 'Finder macOS shortcuts',
         vars: [],
         icon: "fa-brands fa-apple",
-        color: "#38ff53",
+        color: "var(--finder-color)",
         category: "finder",
         tags: "finder shortcut"
     },
@@ -38,7 +38,7 @@ const finderData = [
         comment: "Základné ovládanie (zatvorenie, minimalizácia)",
         vars: [],
         icon: "fa-brands fa-apple",
-        color: "#38ff53",
+        color: "var(--finder-color)",
         category: "finder",
         tags: "zatvorenie minimalizácia"
     },
@@ -114,7 +114,7 @@ const finderData = [
         comment: "// Prepínanie a pohyb",
         vars: [],
         icon: "fa-brands fa-apple",
-        color: "#38ff53",
+        color: "var(--finder-color)",
         category: "finder",
         tags: "prepínanie pohyb"
     },
@@ -145,7 +145,7 @@ const finderData = [
         comment: "// Fullscreen a zarovnanie - režim okna",
         vars: [],
         icon: "fa-brands fa-apple",
-        color: "#38ff53",
+        color: "var(--finder-color)",
         category: "finder",
         tags: "fullscreen maximize"
     },

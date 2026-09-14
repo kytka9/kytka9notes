@@ -4,7 +4,7 @@ const brewData = [
     comment: "Homebrew manager",
     vars: [],
     icon: "fa-solid fa-beer-mug-empty",
-    color: "#e2df06",
+    color: "var(--brew-color)",
     category: "brew",
     tags: "brew"
   },
