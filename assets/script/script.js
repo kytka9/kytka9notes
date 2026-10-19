@@ -1,6 +1,7 @@
 const notesData = [
   ...brewData,
   ...gitData,
+  ...vimData,
   ...coreCommandsData,
   ...finderData,
   ...markdownData,
