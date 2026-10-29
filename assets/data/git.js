@@ -229,4 +229,126 @@ const gitData = [
     category: "git",
     tags: "git"
   },
+  // GIT DIFF – POROVNÁVANIE ZMIEN
+  {
+    command: "",
+    comment: "Git diff - porovnávanie zmien",
+    vars: [],
+    icon: "fa-brands fa-git-alt",
+    color: "var(--git-color)",
+    category: "git",
+    tags: "git"
+  },
+  {
+    command: "git diff",
+    comment: "// Zobrazí rozdiely medzi Working Directory a Stage",
+    vars: [],
+    icon: "",
+    color: "",
+    category: "git",
+    tags: "git diff porovnanie"
+  },
+  {
+    command: "git diff --staged",
+    comment: "// Zobrazí rozdiely medzi HEAD a Stage",
+    vars: [],
+    icon: "",
+    color: "",
+    category: "git",
+    tags: "git diff staged stage commit"
+  },
+  {
+    command: "git diff HEAD",
+    comment: "// Zobrazí rozdiely medzi posledným commitom (HEAD) a Working Directory",
+    vars: [],
+    icon: "",
+    color: "",
+    category: "git",
+    tags: "git diff head working-directory"
+  },
+  {
+    command: "git diff",
+    comment: "// Porovná rozdiely medzi dvoma commitmi podľa ich hashov",
+    vars: ["hash_prvého_commitu", "hash_druhého_commitu"],
+    icon: "",
+    color: "",
+    category: "git",
+    tags: "git diff commit hash porovnanie"
+  },
+  {
+    command: "git diff",
+    comment: "// Zobrazí rozdiely iba pre konkrétny súbor",
+    vars: ["názov_súboru"],
+    icon: "",
+    color: "",
+    category: "git",
+    tags: "git diff súbor"
+  },
+
+  // GIT REMOTE – VZDIALENÉ REPOZITÁRE
+  {
+    command: "",
+    comment: "Git remote - vzdialené repozitáre",
+    vars: [],
+    icon: "fa-brands fa-git-alt",
+    color: "var(--git-color)",
+    category: "git",
+    tags: "git"
+  },
+  {
+    command: "git remote",
+    comment: "// Zobrazí názvy nakonfigurovaných vzdialených repozitárov",
+    vars: [],
+    icon: "",
+    color: "",
+    category: "git",
+    tags: "git remote repozitár"
+  },
+  {
+    command: "git remote -v",
+    comment: "// Zobrazí vzdialené repozitáre spolu s URL adresami pre fetch a push",
+    vars: [],
+    icon: "",
+    color: "",
+    category: "git",
+    tags: "git remote url fetch push"
+  },
+
+  // GIT STASH – DOČASNÉ ULOŽENIE ZMIEN
+  {
+    command: "",
+    comment: "Git stash - dočasné uloženie zmien",
+    vars: [],
+    icon: "fa-brands fa-git-alt",
+    color: "var(--git-color)",
+    category: "git",
+    tags: "git"
+  },
+  {
+    command: "git stash",
+    comment: "// Dočasne uloží zmeny z Working Directory a Stage a obnoví čistý pracovný stav",
+    vars: [],
+    icon: "",
+    color: "",
+    category: "git",
+    tags: "git stash zmeny uloženie"
+  },
+  {
+    command: "git stash save",
+    comment: "// Dočasne uloží zmeny s voliteľným popisom",
+    vars: ["voliteľný_popis"],
+    icon: "",
+    color: "",
+    category: "git",
+    tags: "git stash save zmeny popis"
+  },
+  {
+    command: "git stash pop",
+    comment: "// Obnoví zmeny z posledného stash záznamu a odstráni ho zo zoznamu, ak sa obnova podarí",
+    vars: [],
+    icon: "",
+    color: "",
+    category: "git",
+    tags: "git stash pop obnova"
+  },
 ]
